@@ -1,0 +1,85 @@
+<div class="container-fluid shadow p-3 mb-3 bg-white rounded"  id = "now">
+    <div class="row">
+        <div class="col xl-6 lg-6 md-6 sm-12">
+            
+            <div class="row">
+                <div class="input-group ">
+                    <input type="text" #citySearch class="form-control" placeholder="Search city" >
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" (click)= "infoSearch(citySearch.value)" ng-click="saveUser($event)">Search</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <h3 >Current Weather</h3>
+                    <div class="row">
+                        <div class="col xl-2 lg-2 md-2 sm-6">
+                            <div class="row">
+                                <div class="card" style="width: 18rem; border: hidden; width: 150px; height: 150px;  margin-left: 10px;">
+                                    <img  src="../../assets/weather_icon.png" alt="Card image cap"> 
+                                  </div>
+                                  <h1 style="font-size: 80px; font-weight: 200;">{{currentMaxTemperature}} °<sub style="color: gray; font-size: 30px;">C</sub></h1>
+                            </div>
+                            <div class="col xl-2 lg-2 md-2 sm-6"></div>
+                            
+
+                        </div>
+                        <div class="col xl-4 lg-4 md-4 sm-4">
+                            <div class="row">
+                                <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>Max temperature</td>
+                                        <td>{{currentMaxTemperature}}</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Min temperature</td>
+                                        <td>{{currentMinTemperature}}</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Humadity</td>
+                                        <td>{{currentHumadity}} %</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Wind Speed </td>
+                                        <td>{{currentWindSpeed}}</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                            
+                            <!-- <div class="row">
+                                <h5 class="label" style="padding-right: 150px; padding-left: 20px;">  Max temperature</h5>
+                                <span class="value"> 50</span>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h5 class="label" style="padding-right: 150px; padding-left: 20px;">  Min temperature</h5>
+                                <span class="value"> 50</span>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h5 class="label" style="padding-right: 220px; padding-left: 20px;">  Humadity</h5>
+                                <span class="value"> 50</span>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h5 class="label" style="padding-right: 200px; padding-left: 20px;">  Wind Speed </h5>
+                                <span class="value"> 50</span>
+                            </div>
+                            <hr>-->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="col xl-6 lg-6 md-6 sm-12">
+            <!------------------------Google Map---------------------------->
+            <app-google-map></app-google-map>
+            <!--------------------------------------------------------------->
+        </div>
+        
+    </div>
+</div>

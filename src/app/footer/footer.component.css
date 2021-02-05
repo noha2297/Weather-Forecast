@@ -1,0 +1,33 @@
+footer {
+    height: 200px;
+    background-color: #161d3b;
+  }
+  footer ul.footerleft{
+      margin-left: 150px;
+      margin-top: 10px;
+  }
+  footer ul.footerleft li{
+      display: inline;
+      margin-right: 25px;
+  }
+  footer a{
+      color: #d4d4d5;
+  }
+  
+  footer a:hover{
+      color: #ffffff;
+      text-decoration: none;    
+  }
+  .social:hover {
+       -webkit-transform: scale(1.0);
+       -webkit-transition-duration: 0.5s;
+   }
+   .social {
+       -webkit-transform: scale(0.8);
+       color: #d4d4d5;
+       
+   }
+   #copyRight
+   {
+       margin-left: 15px;
+   }

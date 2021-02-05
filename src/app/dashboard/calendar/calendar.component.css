@@ -1,0 +1,60 @@
+/************** *******************Calender **********************************/
+.demo-app {
+    display: flex;
+    min-height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+  
+  /* .demo-app-sidebar {
+    width: 100px;
+    line-height: .5;
+    background: #eaf9ff;
+    border-right: 1px solid #d3e2e8;
+  }
+  
+  .demo-app-sidebar-section {
+    padding: 2em;
+  }
+   */
+  .demo-app-main {
+    width: 500px;
+    flex-grow: 1;
+    padding: 3em;
+    margin-left: 50px;
+    
+  }
+  :host ::ng-deep .fc .fc-toolbar.fc-header-toolbar 
+  {
+      background-color: #bb5f65;
+
+  }
+  /* febreuary*/
+  :host ::ng-deep .fc .fc-toolbar-title
+  {
+    color:white !important;
+    margin: 15px;
+  }
+  .fc { 
+    max-width: 400px;  
+    /* background-color:#d4d4d5; */
+
+  }
+  :host ::ng-deep .fc .fc-button-group>.fc-button
+  {
+      margin-right: 10px;
+      background-color: white;
+      color: #161d3b;
+
+  }
+  :host ::ng-deep .fc .fc-col-header-cell-cushion {
+    color : #161d3b !important;
+    display: inline-block;
+    padding: 2px 4px;
+    
+}
+:host ::ng-deep .fc-daygrid-day-number
+{
+    color : #161d3b !important;
+}
+ /***************************************************************************************************/

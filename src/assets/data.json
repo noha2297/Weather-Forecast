@@ -1,0 +1,33 @@
+{
+    "data" :[
+        {
+            "city":"Cairo",
+            "temperature" : 35,
+            "humadity": 20,
+            "windspeed" :2.3
+      
+          } ,
+          {                 
+            "city":"London",
+            "temperature" : 20,
+            "humadity": 40,
+            "windspeed" :2.2
+          } ,
+          {
+            "city":"Paris",
+            "temperature" : 29,
+            "humadity": 40,
+            "windspeed" :4.1
+      
+          } ,
+          {
+            "city":"luxor",
+            "temperature" : 50,
+            "humadity": 10,
+            "windspeed" :1.9
+      
+          } 
+          
+
+    ]
+}
