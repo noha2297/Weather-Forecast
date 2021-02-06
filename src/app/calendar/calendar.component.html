@@ -1,0 +1,82 @@
+<div class="container-fluid bg-light" >
+    <div class="row">
+        <div class="col xl-6 lg-6 md-6 sm-12">
+            <!---------------Search---------------------------->
+            <div class="input-group ">
+                <input type="text" #citySearch class="form-control" placeholder="Search city" >
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button"(click)= "infoSearch(citySearch.value)" ng-click="saveUser($event)">Search</button>
+                </div>
+            </div>
+            <!-- ----------------- calendar ----------------->
+            <div class='demo-app'>
+                <div class='demo-app-main'>
+                  <full-calendar
+                    [options]='calendarOptions'
+                  ></full-calendar>
+                </div> 
+            </div> 
+            <!-------------------------------------------------->
+        </div>
+
+        <div class="col xl-6 lg-6 md-6 sm-12 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl-6 lg-6 md-6 sm-12">
+                        <h5 class="card-title">{{currentCity}}</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <ul>
+                                <li> Temperature :{{currentTemperature}} </li>
+                                <hr>
+                                <li> Humadity : {{currentHumadity}}  </li>
+                                <hr>
+                                <li> Wind Speed : {{currentWindSpeed}}  </li>
+                            </ul>
+                    </div>
+                    <div class="col xl-6 lg-6 md-6 sm-12">
+                        <h5 class="card-title">{{currentCity}}</h5>
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <ul>
+                                <li> Temperature :{{currentTemperature}} </li>
+                                <hr>
+                                <li> Humadity : {{currentHumadity}}  </li>
+                                <hr>
+                                <li> Wind Speed : {{currentWindSpeed}}  </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row mb-5">
+                <div class="weatherInfoCard bg-white border border-white">
+                    <div class="card-body " style="margin-top:20px">
+                        <div class="left">
+                            <h5 class="card-title">{{currentCity}}</h5> -->
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <!-- <ul>
+                                <li> Temperature :{{currentTemperature}} </li>
+                                <li> Humadity : {{currentHumadity}}  </li>
+                                <li> Wind Speed : {{currentWindSpeed}}  </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <h5 class="card-title">{{currentCity}}</h5> -->
+                            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                            <!-- <ul>
+                                <li> Temperature :{{currentTemperature}} </li>
+                                <li> Humadity : {{currentHumadity}}  </li>
+                                <li> Wind Speed : {{currentWindSpeed}}  </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        
+
+
+    </div>
+</div>
+
+
+  

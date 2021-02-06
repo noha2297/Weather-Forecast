@@ -1,0 +1,41 @@
+.list-group-item
+{
+    background-color:#384c8f;
+    color: white;
+}
+.card-body
+{
+    background-color: #232c55; 
+    color: white;
+}
+.card-title
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+.table_img
+{
+    width: 100px;
+    height: 100px;
+}
+.table
+{
+    text-align: center;
+    background-color: #232c55; 
+    border: hidden;
+
+}
+ td {
+    border :hidden;
+}
+.odd
+{
+    background-color:#384c8f;
+}
+h3{
+    margin-bottom: 20px;
+    font-family: cursive;
+    
+    color : #232c55; 
+}

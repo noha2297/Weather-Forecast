@@ -1,0 +1,20 @@
+.input-group
+  {
+      margin-left: 20px;
+      margin-right: 20px;
+
+  }
+  .btn 
+  {
+      background-color: #161d3b;
+      color: white;
+  }
+  
+  .weatherInfoCard
+  {
+      width: 18rem;
+      border: solid;
+      background-color: white;
+      margin-top: 20px;
+      
+  }

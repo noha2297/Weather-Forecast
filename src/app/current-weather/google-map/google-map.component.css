@@ -1,0 +1,14 @@
+agm-map {
+    margin-top: 10px;
+    height: 400px;
+  }
+  :host ::ng-deep .agm-map-container-inner 
+  {
+    margin-top: 20px;
+  }
+  *{
+      font-family: cursive;
+  }
+  a{
+      color:darkblue;
+  }

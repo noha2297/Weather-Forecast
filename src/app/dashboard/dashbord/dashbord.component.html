@@ -1,0 +1,58 @@
+<div class="container-fluid shadow p-3 mt-3 bg-white rounded" id ="dashboard" >
+    <div class="row">
+        <div class="col xl-6 lg-6 md-6 sm-12">
+            <!---------------Search---------------------------->
+            <div class="input-group ">
+                <input type="text" #citySearch class="form-control" placeholder="Search city" >
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button"(click)= "infoSearch(citySearch.value)" ng-click="saveUser($event)">Search</button>
+                </div>
+            </div>
+            <!---------------calendar---------------------------->
+                <app-calendar></app-calendar>
+            <!--------------------------------------------------->
+        </div>
+        <div class="col xl-6 lg-6 md-6 sm-12 ">
+            <div class="container">
+                <div class="row bg-light" style="margin-top: 100px;">
+                    <h3  style="text-align: center;" >{{currentCity}}</h3>
+                    <!-- <div class="col xl-6 lg-6 md-6 sm-12">
+                        <h5 class="card-title">{{currentCity}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <ul>
+                                <li> Temperature :{{currentTemperature}} </li>
+                                <hr>
+                                <li> Humadity : {{currentHumadity}}  </li>
+                                <hr>
+                                <li> Wind Speed : {{currentWindSpeed}}  </li>
+                            </ul>
+                    </div> -->
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                            <td>Max temperature</td>
+                            <td>{{currentTemperature}}</td>
+                            </tr>
+                            <tr>
+                            <td>Humadity</td>
+                            <td>{{currentHumadity}} %</td>
+                            </tr>
+                            <tr>
+                            <td>Wind Speed </td>
+                            <td>{{currentWindSpeed}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+
+                       
+        </div>
+        
+
+
+    </div>
+</div>
+
+

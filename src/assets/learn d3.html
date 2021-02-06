@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///D:/Web%20cources/angular/d3_practice/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn d3</title>
+    <link rel="stylesheet" href="./learn d3_files/index.css">
+    
+</head>
+<body>
+    <h1>first heading</h1>
+    <svg width="2000" hight="800"><line x1="20" x2="10" style="stroke: red; stroke-width: 3px;"></line></svg>
+    <script src="./learn d3_files/d3.v4.min.js.download"></script>
+    <script src="./learn d3_files/d3.min.js.download"> </script>
+    <!-- <script src ="index.js"></script> -->
+    <script>
+        d3.select("svg")
+.append("line")
+.attr("x1" , 10)
+.attr("x2" , 200)
+.attr("x1" , 20)
+.attr("x2" , 10)
+.style("stroke" , "red")
+.style("stroke-width", "3px");
+
+    </script>
+   
+
+
+</body></html>
